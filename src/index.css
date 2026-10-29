@@ -1,0 +1,367 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar{
+    background-color: green ;
+    height:20px;
+    
+}
+
+/* Qeybta Navbar */
+
+.navbar {
+  background-color: blue;
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  transition: background-color 0.5s ease;
+}
+
+
+/* Marka scroll la sameeyo */
+.navbar.scrolled {
+  background-color: #0f172a;
+}
+
+/* .navbar {
+  background-color: blue;
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  transition: background-color 0.5s ease;
+}
+
+
+ .navbar.scrolled {
+  background-color: #0f172a;
+   
+} */
+
+
+body{
+  min-height:2000px; 
+}
+
+.navbar .navbar-centre{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar .navbar-centre .navbar-left{
+    float: left;
+}
+
+.navbar .navbar-centre .navbar-left h2 {
+    float: inline-end;
+    margin-top: 25px;
+    margin-left: 13px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.navbar .navbar-centre .navbar-left img {
+    width: 89px;
+    height: 89px;
+    margin-top: 8px;
+    margin-left: 28px;
+}
+
+.navbar .navbar-centre .navbar-right{
+    float: right;
+
+}
+.navbar .navbar-centre .navbar-right ul {
+    list-style: none;
+}
+.navbar .navbar-centre .navbar-right ul li {
+    display: inline;
+    padding: 5px 20px;
+    color: whitesmoke;
+    line-height: 89px;
+}
+ 
+
+ 
+
+/* Qeybta HERO */
+
+
+.hero{
+    background-image: url('./img/pic1.jpg');
+    background-size: cover;
+    height: 90vh;
+    animation-name: hero;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+/* .hero .hero-overlay {
+  background-color: rgba(0, 0, 0, 0.384);
+  width: 900px;
+  text-align: center;
+  
+
+} */
+
+
+
+
+@keyframes hero {
+    25%{
+        background-image: url('./img/pic2.jpg');
+    }
+    75%{
+        background-image: url('./img/pic3.jpg');
+    }
+    100%{
+        background-image: url('./img/pic1.jpg');
+    }
+}
+
+
+/* Qeybta concent */
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Qeybta conent */
+.content {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 600px;
+}
+.content .content-left {
+    float: left;
+    margin-top: 100px;
+}
+.content .content-left h3 {
+    color: rgb(0, 0,0);
+    font-weight: bold;
+    
+}
+.content .content-left img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+.content .content-right {
+    float: right;
+    width: 700px;
+    margin-top: 100px;
+    
+}
+.content .content-right h2 {
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.content .content-right h1 {
+    color: rgb(0, 0, 0);
+    text-transform: normal;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.content .content-right p {
+    color:  black;
+    padding-top: 10px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+
+}
+
+
+
+/* qeybtaan waa qeybta aan anigu dib uga soo daray */
+
+.stats-section {
+    background-color: #007bff;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.stat-info h3 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #212529;
+}
+
+.stat-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #495057;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+/* qeybta footer */
+
+.footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+  margin-top: 300px;
+ 
+  
+  
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+
+
+.footer-about h3,
+.footer-contact h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  
+}
+
+.footer-about p {
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 1.6;
+
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #334155;
+  font-size: 13px;
+  
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-about p {
+    max-width: 100%;
+  }
+}
+
+
+.stats-section {
+  background-color: #0033ff;
+  padding: 50px 24px;
+  margin: 40px 0;
+  
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stats-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.stats-icon {
+  font-size: 30px;
+}
+
+.stats-card h3 {
+  margin: 0;
+  font-size: 26px;
+  color: #0f172a;
+}
+
+.stats-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+}
